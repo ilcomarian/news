@@ -6,7 +6,7 @@ import Home from "./home";
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route path="/sports" component={Sorts} />
+    <Route exact path="/sports" component={Sorts} />
   </Switch>
 );
 
