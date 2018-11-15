@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import {
   Layout,
   Header,
@@ -8,6 +9,7 @@ import {
   Drawer,
   Content
 } from "react-mdl";
+import Routes from "./routes";
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -30,23 +32,21 @@ class NavBar extends Component {
               </HeaderRow>
               <HeaderRow>
                 <Navigation>
-                  <a href="#">Link</a>
-                  <a href="#">Link</a>
-                  <a href="#">Link</a>
-                  <a href="#">Link</a>
+                  <Link to="/">Home</Link>
+                  <Link to="/sports">Sports</Link>
                 </Navigation>
               </HeaderRow>
             </Header>
             <Drawer title="Title">
               <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <Link to="/">Home</Link>
+                <Link to="/sports">Sports</Link>
               </Navigation>
             </Drawer>
             <Content>
-              <div className="page-content" />
+              <div className="page-content">
+                <Routes />
+              </div>
             </Content>
           </Layout>
         </div>
