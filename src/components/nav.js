@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   Layout,
   Header,
@@ -32,23 +32,56 @@ class NavBar extends Component {
               </HeaderRow>
               <HeaderRow>
                 <Navigation>
-                  <Link to="/">Home</Link>
-                  <Link to="/sports">Sports</Link>
-                  <Link to="/business">Business</Link>
-                  <Link to="/entertainment">Entertainment</Link>
-                  <Link to="/science">Science</Link>
-                  <Link to="/technology">Technology</Link>
+                  <NavLink exact to="/" activeStyle={{ color: "aquamarine" }}>
+                    Home
+                  </NavLink>
+                  <NavLink to="/sports" activeStyle={{ color: "aquamarine" }}>
+                    Sports
+                  </NavLink>
+                  <NavLink to="/business" activeStyle={{ color: "aquamarine" }}>
+                    Business
+                  </NavLink>
+                  <NavLink
+                    to="/entertainment"
+                    activeStyle={{ color: "aquamarine" }}
+                  >
+                    Entertainment
+                  </NavLink>
+                  <NavLink to="/science" activeStyle={{ color: "aquamarine" }}>
+                    Science
+                  </NavLink>
+                  <NavLink
+                    to="/technology"
+                    activeStyle={{ color: "aquamarine" }}
+                  >
+                    Technology
+                  </NavLink>
                 </Navigation>
               </HeaderRow>
             </Header>
             <Drawer title="Title">
               <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/sports">Sports</Link>
-                <Link to="/business">Business</Link>
-                <Link to="/entertainment">Entertainment</Link>
-                <Link to="/science">Science</Link>
-                <Link to="/technology">Technology</Link>
+                <NavLink exact to="/" activeStyle={{ color: "aquamarine" }}>
+                  Home
+                </NavLink>
+                <NavLink to="/sports" activeStyle={{ color: "aquamarine" }}>
+                  Sports
+                </NavLink>
+                <NavLink to="/business" activeStyle={{ color: "aquamarine" }}>
+                  Business
+                </NavLink>
+                <NavLink
+                  to="/entertainment"
+                  activeStyle={{ color: "aquamarine" }}
+                >
+                  Entertainment
+                </NavLink>
+                <NavLink to="/science" activeStyle={{ color: "aquamarine" }}>
+                  Science
+                </NavLink>
+                <NavLink to="/technology" activeStyle={{ color: "aquamarine" }}>
+                  Technology
+                </NavLink>
               </Navigation>
             </Drawer>
             <Content>
