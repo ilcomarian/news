@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-class Science extends Component {
+import { ProgressBar } from "react-mdl";
+class Category extends Component {
   constructor(props) {
     super(props);
     this.state = { article: undefined, topArticle: undefined, isLoaded: false };
   }
-  componentDidMount() {
+  componentDidUpdate() {
+    var currentLocation = this.props.location.pathname.split("/").join("");
+
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=e2003c86ce924ed39297bf09a964959d`
+      `https://newsapi.org/v2/top-headlines?country=us&category=${currentLocation}&apiKey=e2003c86ce924ed39297bf09a964959d`
     )
       .then(res => res.json())
       .then(json => {
@@ -17,7 +20,11 @@ class Science extends Component {
   render() {
     let { isLoaded } = this.state;
     if (!isLoaded) {
-      return <div>Loading...</div>;
+      return (
+        <div>
+          <ProgressBar progress={44} />
+        </div>
+      );
     }
     return (
       <div>
@@ -47,4 +54,4 @@ class Science extends Component {
   }
 }
 
-export default Science;
+export default Category;

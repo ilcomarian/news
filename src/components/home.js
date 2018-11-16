@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ProgressBar } from "react-mdl";
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +18,11 @@ class Home extends Component {
   render() {
     let { isLoaded } = this.state;
     if (!isLoaded) {
-      return <div>Loading...</div>;
+      return (
+        <div>
+          <ProgressBar progress={44} />
+        </div>
+      );
     }
     return (
       <div>

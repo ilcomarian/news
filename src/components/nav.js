@@ -37,7 +37,7 @@ class NavBar extends Component {
                   <Link to="/business">Business</Link>
                   <Link to="/entertainment">Entertainment</Link>
                   <Link to="/science">Science</Link>
-                  <Link to="/tech">Technology</Link>
+                  <Link to="/technology">Technology</Link>
                 </Navigation>
               </HeaderRow>
             </Header>
@@ -48,7 +48,7 @@ class NavBar extends Component {
                 <Link to="/business">Business</Link>
                 <Link to="/entertainment">Entertainment</Link>
                 <Link to="/science">Science</Link>
-                <Link to="/tech">Technology</Link>
+                <Link to="/technology">Technology</Link>
               </Navigation>
             </Drawer>
             <Content>
