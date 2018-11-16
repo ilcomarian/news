@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-class Home extends Component {
+class Science extends Component {
   constructor(props) {
     super(props);
     this.state = { article: undefined, topArticle: undefined, isLoaded: false };
   }
   componentDidMount() {
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=e2003c86ce924ed39297bf09a964959d`
+      `https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=e2003c86ce924ed39297bf09a964959d`
     )
       .then(res => res.json())
       .then(json => {
@@ -47,4 +47,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Science;
