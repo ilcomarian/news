@@ -10,10 +10,10 @@ import Category from "./science";
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/sports" component={Sports} />
-    <Route exact path="/business" component={Business} />
-    <Route exact path="/entertainment" component={Entertainment} />
-    <Route exact path="/science" component={Category} />
+    <Route exact path="/sports" component={Home} />
+    <Route exact path="/business" component={Home} />
+    <Route exact path="/entertainment" component={Home} />
+    <Route exact path="/science" component={Home} />
     <Route exact path="/technology" component={Technology} />
   </Switch>
 );

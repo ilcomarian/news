@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { cardLayout } from "../card";
 import { ProgressBar, Card, CardTitle, CardActions, CardMenu } from "react-mdl";
 class Business extends Component {
   constructor(props) {
