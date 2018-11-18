@@ -52,6 +52,10 @@
 .link-style {
   color: aquamarine;
 }
+.mdl-layout__header-row {
+  display: flex;
+  justify-content: center;
+}
 
 @keyframes fadeOutUp {
   from {

@@ -59,7 +59,7 @@ class NavBar extends Component {
                 </Navigation>
               </HeaderRow>
             </Header>
-            <Drawer title="Title">
+            <Drawer title="News">
               <Navigation>
                 <NavLink exact to="/" activeStyle={{ color: "aquamarine" }}>
                   Home
