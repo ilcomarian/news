@@ -21,15 +21,7 @@ class NavBar extends Component {
         <div className="demo-big-content">
           <Layout>
             <Header waterfall>
-              <HeaderRow title="Title">
-                <Textfield
-                  value=""
-                  onChange={() => {}}
-                  label="Search2"
-                  expandable
-                  expandableIcon="search"
-                />
-              </HeaderRow>
+              <HeaderRow title="NEWS" />
               <HeaderRow>
                 <Navigation>
                   <NavLink exact to="/" activeStyle={{ color: "aquamarine" }}>
@@ -56,6 +48,13 @@ class NavBar extends Component {
                   >
                     Technology
                   </NavLink>
+                  {/* <Textfield
+                    value=""
+                    onChange={() => {}}
+                    label="Search2"
+                    expandable
+                    expandableIcon="search"
+                  /> */}
                 </Navigation>
               </HeaderRow>
             </Header>

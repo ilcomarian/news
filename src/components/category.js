@@ -122,7 +122,7 @@ class Home extends Component {
       );
     }
     let currentLocation = this.props.location.pathname.split("/").join("");
-
+    console.log(this.state.science);
     if (currentLocation === "sports") {
       return (
         <div className="cards-div">
