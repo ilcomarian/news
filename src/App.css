@@ -6,7 +6,8 @@
   /* justify-content: space-around; */
 }
 .card {
-  margin: 1%;
+  margin: 2%;
+  margin-top: 2%;
   text-align: center;
 }
 .mdl-card__title {
@@ -25,13 +26,17 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
+.mdl-layout__drawer-button {
+  color: #000;
+}
 .card-div a {
   text-decoration: "none";
 }
+
 .cards-div h3 {
   display: none;
   color: white;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   text-shadow: 4px -8px 20px black;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
@@ -43,13 +48,16 @@
   animation: fadeIn;
   animation-duration: 2s;
 }
+
+.card:hover {
+}
 .card:hover h3 {
   display: block;
   animation: fadeIn;
   animation-duration: 2s;
 }
 .card h5 {
-  font-size: 1.4vw;
+  font-size: 1vw;
 }
 
 .link-style {
@@ -58,6 +66,10 @@
 .mdl-layout__header-row {
   display: flex;
   justify-content: center;
+}
+.mdl-layout__content {
+  /* margin-top: 1vw; */
+  padding: 4vw;
 }
 
 @keyframes fadeOutUp {

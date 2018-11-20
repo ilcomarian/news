@@ -20,33 +20,51 @@ class NavBar extends Component {
       <div className="App">
         <div className="demo-big-content">
           <Layout>
-            <Header waterfall>
-              <HeaderRow title="NEWS" />
-              <HeaderRow>
+            <Header style={{ backgroundColor: "white" }}>
+              <HeaderRow title="NEWS" style={{ color: "black" }}>
                 <Navigation>
-                  <NavLink exact to="/" activeStyle={{ color: "aquamarine" }}>
-                    Home
-                  </NavLink>
-                  <NavLink to="/sports" activeStyle={{ color: "aquamarine" }}>
-                    Sports
-                  </NavLink>
-                  <NavLink to="/business" activeStyle={{ color: "aquamarine" }}>
-                    Business
+                  <NavLink
+                    exact
+                    to="/"
+                    style={{ color: "black" }}
+                    activeStyle={{ color: "grey" }}
+                  >
+                    <h6>Home</h6>
                   </NavLink>
                   <NavLink
+                    to="/sports"
+                    style={{ color: "black" }}
+                    activeStyle={{ color: "grey" }}
+                  >
+                    <h6>Sports</h6>
+                  </NavLink>
+                  <NavLink
+                    to="/business"
+                    style={{ color: "black" }}
+                    activeStyle={{ color: "grey" }}
+                  >
+                    <h6>Business</h6>
+                  </NavLink>
+                  <NavLink
+                    style={{ color: "black" }}
                     to="/entertainment"
-                    activeStyle={{ color: "aquamarine" }}
+                    activeStyle={{ color: "grey" }}
                   >
-                    Entertainment
-                  </NavLink>
-                  <NavLink to="/science" activeStyle={{ color: "aquamarine" }}>
-                    Science
+                    <h6>Entertainment</h6>
                   </NavLink>
                   <NavLink
-                    to="/technology"
-                    activeStyle={{ color: "aquamarine" }}
+                    to="/science"
+                    style={{ color: "black" }}
+                    activeStyle={{ color: "grey" }}
                   >
-                    Technology
+                    <h6>Science</h6>
+                  </NavLink>
+                  <NavLink
+                    style={{ color: "black" }}
+                    to="/technology"
+                    activeStyle={{ color: "grey" }}
+                  >
+                    <h6>Technology</h6>
                   </NavLink>
                   {/* <Textfield
                     value=""

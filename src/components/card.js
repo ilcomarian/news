@@ -2,11 +2,11 @@ import React from "react";
 import { Card, CardTitle, CardActions, CardMenu } from "react-mdl";
 
 export const cardLayout = (item, i) =>
-  i === 0 ? (
+  i < 2 ? (
     <a
       target="_blank"
       style={{
-        width: "70%",
+        width: "49%",
         display: "flex",
         justifyContent: "center",
         textDecoration: "none",
@@ -14,13 +14,13 @@ export const cardLayout = (item, i) =>
       }}
       href={item.url}
     >
-      <Card shadow={2} style={{ width: "70%" }} className="card" key={i}>
+      <Card shadow={2} style={{ width: "80%" }} className="card" key={i}>
         <CardTitle
           style={{
             display: "flex",
             justifyContent: "center",
             color: "#fff",
-            height: "30vw",
+            height: "25vw",
 
             background: `url(${item.urlToImage}) center / cover`,
             backgroundSize: "100% 100%"
@@ -47,7 +47,7 @@ export const cardLayout = (item, i) =>
       }}
       href={item.url}
     >
-      <Card shadow={2} style={{ width: "80%" }} className="card" key={i}>
+      <Card shadow={2} style={{ width: "92%" }} className="card" key={i}>
         <CardTitle
           style={{
             display: "flex",
