@@ -116,7 +116,13 @@ class Home extends Component {
 
     if (!isLoaded) {
       return (
-        <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
+        >
           <ProgressBar progress={44} />
         </div>
       );

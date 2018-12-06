@@ -71,6 +71,9 @@
   /* margin-top: 1vw; */
   padding: 4vw;
 }
+.front-card {
+  width: 50%;
+}
 
 @keyframes fadeOutUp {
   from {

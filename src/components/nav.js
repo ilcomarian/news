@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import {
   Layout,
   Header,
-  Textfield,
   HeaderRow,
   Navigation,
   Drawer,
@@ -29,7 +28,7 @@ class NavBar extends Component {
                     style={{ color: "black" }}
                     activeStyle={{ color: "grey" }}
                   >
-                    <h6>Home</h6>
+                    <h6>Top Stories</h6>
                   </NavLink>
                   <NavLink
                     to="/sports"
@@ -66,20 +65,13 @@ class NavBar extends Component {
                   >
                     <h6>Technology</h6>
                   </NavLink>
-                  {/* <Textfield
-                    value=""
-                    onChange={() => {}}
-                    label="Search2"
-                    expandable
-                    expandableIcon="search"
-                  /> */}
                 </Navigation>
               </HeaderRow>
             </Header>
             <Drawer title="News">
               <Navigation>
                 <NavLink exact to="/" activeStyle={{ color: "aquamarine" }}>
-                  Home
+                  Top Stories
                 </NavLink>
                 <NavLink to="/sports" activeStyle={{ color: "aquamarine" }}>
                   Sports
